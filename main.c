@@ -6,7 +6,7 @@
 
 #include "fruits.h"
 
-#define ARRAY_LEN(xs) (sizeof(xs) / sizeof((xs)[0]))
+#define ARRAY_LEN(x) ((sizeof(x)/sizeof(0[x])) / ((size_t)(!(sizeof(x) % sizeof(0[x])))))
 
 typedef struct Node Node;
 
